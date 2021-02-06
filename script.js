@@ -12,7 +12,7 @@ $(document).ready(function() {
    getAllTasks();
 
    function getAllAvailableBoards(callback, callbackArgs) {
-      var requestUrl = trelloApiRoot + 'getTrelloBoards';
+      var requestUrl = trelloApiRoot + 'getTrel loBoards';
 
       $.ajax({
          url: requestUrl,
@@ -38,7 +38,7 @@ $(document).ready(function() {
    function prepareBoardOrListSelectOptions(availableChoices) {
       return availableChoices.map(function(choice) {
          return $('<option>')
-            .addClass('crud-select__option')
+            .addClass('crud-select__option')  
             .val(choice.id)
             .text(choice.name || 'Unknown name');
      });
@@ -47,6 +47,7 @@ $(document).ready(function() {
    function handleDatatableRender(taskData, boards) {
       $tasksContainer.empty();
       boards.forEach(board => {
+
          availableBoards[board.id] = board;
       });
 
