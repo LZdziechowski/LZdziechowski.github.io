@@ -1,9 +1,8 @@
 $(document).ready(function() {
-   const apiRoot = 'https://serene-eyrie-65608.herokuapp.com/v1/;
+   const apiRoot = 'https://serene-eyrie-65608.herokuapp.com/v1/';
    const trelloApiRoot = 'https://serene-eyrie-65608.herokuapp.com/v1/trello/';
    const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
    const $tasksContainer = $('[data-tasks-container]');
-
    var availableBoards = {};
    var availableTasks = {};
 
